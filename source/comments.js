@@ -17,6 +17,7 @@ $(function(){
     var comment = $('.comment-form > textarea').val()
     var name = $('.comment-form > input[name=name]').val()
     $('#comment_list').append(comment_body(comment, name));
+    clear_form();
     $('.comment-form').css('display', 'none');
     $('#new_comment_button').css('display', 'block');
 
@@ -25,6 +26,11 @@ $(function(){
 
   var comment_body = function(comment, name){
     return ('<li>' + comment + '<span class="author">' + name + '</span>' + '</li>')
+  }
+
+  var clear_form = function() {
+    $('.comment-form > textarea').val("")
+    $('.comment-form > input[name=name]').val("")
   }
 
 });
