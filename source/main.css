@@ -43,7 +43,7 @@ form#new_comment {
 }
 
 form#new_comment textarea {
-  width: 100%;
+  width: 98%;
 }
 
 form#new_comment input#authorName {
