@@ -15,6 +15,8 @@ var createComment = function(event){
   var $new_comment = $('#hidden #new_list_item_template li').clone();
   $new_comment.find('.comment_body').text(this.newpost.value);
   $new_comment.find('.author').text(this.authorName.value);
-  $new_comment.appendTo("#comment_list");
+  if (this.newpost.value){
+    $new_comment.appendTo("#comment_list");
+  }
   this.parentElement.remove();
 }
