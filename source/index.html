@@ -15,13 +15,31 @@
 
     <ul id="comment_list">
       <li>
-        Nice post.  Don't know how to read that Roman mumbo-jumbo, but I like it.
+        <span class="comment_body">
+          Nice post.  Don't know how to read that Roman mumbo-jumbo, but I like it.
+        </span>
         <span class="author">Tom Jones</span>
       </li>
     </ul>
-
-
     <button id="new_comment_button">New Comment</button>
+    <div id="hidden">
+      <div id="new_comment_template">
+        <li>
+          <form id='new_comment'>
+            <textarea id='newpost'></textarea>
+            </br>
+            <input id='authorName' type='text'></input>
+            <input type='submit'></input>
+          </form>
+        </li>
+      </div>
+      <div id="new_list_item_template">
+        <li>
+          <span class="comment_body"></span>
+          <span class="author"></span>
+        </li>
+      </div>
+    </div>
   </div>
   <script src="jquery-1.10.js"></script>
   <script src="comments.js"></script>
