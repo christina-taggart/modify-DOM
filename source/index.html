@@ -2,6 +2,9 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="comments.js"></script>
   <title>Add Comments</title>
 </head>
 <body>
@@ -22,6 +25,13 @@
 
 
     <button id="new_comment_button">New Comment</button>
+
+    <form class="comment_form" id="add_comment_form" action="/" method="POST">
+      <input name="comment_text" type="text">
+      <input name="commenter_name" type="text">
+      <input name="comment_submit" class=".submit" type="submit" value="Add Comment">
+    </form>
+
   </div>
   <script src="jquery-1.10.js"></script>
   <script src="comments.js"></script>
